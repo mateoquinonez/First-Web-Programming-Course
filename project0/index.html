@@ -11,29 +11,43 @@
 		}
 		.secundario {
 			color: #125f71;
+			text-align: center;
+		}
+		.container {
+		  display: grid;
+		  grid-template-columns: 50px 50px 50px 50px;
+		  grid-template-rows: auto;
+		  grid-template-areas: 
+		    "header header header header"
+		    "main main . sidebar"
+		    "footer footer footer footer";
 		}
 	</style>
 </head>
 <body>
-	<div class="principal">
-		<h1>Piensa</h1>
-		<div class="secundario">
-			<h5>Alfabetizando a traves de Matematica, Programacion y Robotica.</h5>
+	<div class="container center">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="principal">Piensa</h1>
+				<h5 class="secundario">Alfabetizando a traves de Matematica, Programacion y Robotica.</h5>
+			</div>
 		</div> 
-	</div>
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col col-lg-8">
+		
+		<div class="row">
+			<div class="col-md-12">
 				En Piensa creemos en una transformacion positiva a traves de la educacion, creemos que siendo alfabetizados en areas de Ciencia, Tecnologia, Ingenieria y Matematica seremos capaces de tomar buenas decisiones en nuestros circulos de influencia.	
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col col-lg-8">
-				<button type="button" class="btn btn-info btn-lg btn-block">Matematica</button>
-				<button type="button" class="btn btn-info btn-lg btn-block">Programacion</button>
-				<button type="button" class="btn btn-info btn-lg btn-block">Robotica</button>
+		
+		<div class="row">
+			<div class="col col-lg-2 offset-md-3">
+				<button type="button" class="btn btn-outline-primary btn-md">Matematica</button>
+			</div>
+			<div class="col col-lg-2">
+				<button type="button" class="btn btn-outline-secondary btn-md">Programacion</button>
+			</div>	
+			<div class="col col-lg-2">
+				<button type="button" class="btn btn-outline-success btn-md">Robotica</button>
 			</div>
 		</div>
 	</div>
